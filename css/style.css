@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+:root {
+    --cor-roxo: #571E55;
+    --cor-cinza: #F7F7F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: var(--cor-roxo);
+    color: white;
+    height: 110vh;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.cabecalho-menu a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: inherit;
+}
+
+.cabecalho-menu-guias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.cabecalho-menu-guias-link_sobre:hover,
+.cabecalho-menu-guias-link_contato:hover,
+.cabecalho-menu-guias-link_projetos:hover {
+    text-decoration: underline;
+}
+
+.cabecalho-titulo_principal {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 6em;
+    height: 80vh;
+}
+
+.conteudo-perfil_intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-cinza);
+    height: 90vh;
+    padding: 10vh;
+}
+
+.conteudo-perfil_intro-foto_perfil {
+    width: 40%;
+}
+
+.conteudo-perfil_intro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+}
+
+.conteudo-perfil_intro-info h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--cor-roxo);
+}
+
+.conteudo-perfil_intro-info p {
+    font-size: 1.5em;
+}
+
+.conteudo-perfil_intro-info-link {
+    background-color: var(--cor-roxo);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.conteudo-meu_trabalho {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.conteudo-meu_trabalho-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 10vh;
+}
+
+.conteudo-meu_trabalho-info h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--cor-roxo);
+}
+
+.conteudo-meu_trabalho-info p {
+    font-size: 1.5em;
+}
+
+.conteudo-meu_trabalho-imagens {
+    width: 50vw;
+    height: 50vh;
+}
